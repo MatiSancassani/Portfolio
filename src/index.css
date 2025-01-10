@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  color: black;
+  background-color: white;
+}
+
+@font-face {
+  font-family: Console;
+  src: url(./fonts/Console.ttf);
+}
+
+@font-face {
+  font-family: 'IBM';
+  src: url('./fonts/IBM_VGA_8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.infinity {
+  animation: parpadeo 1.3s infinite;
+}
+
+.infinity2 {
+  animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+:root {
+  background-color: #0c0c0c;
+  color: white;
+  font-family: IBM;
+
+}
+
+
+.cursor-blink {
+  display: inline-block;
+  animation: blink 1s steps(2, start);
+}
+
+.cursor-blink2 {
+  display: inline-block;
+  animation: blink 1s steps(2, start);
+  animation-iteration-count: 3;
+}
+
+
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
