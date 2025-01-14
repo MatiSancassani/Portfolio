@@ -8,6 +8,16 @@
 }
 
 @font-face {
+  font-family: Tahoma;
+  src: url(./fonts/tahoma.ttf);
+}
+
+@font-face {
+  font-family: Lucida;
+  src: url(./fonts/lucon.ttf);
+}
+
+@font-face {
   font-family: Console;
   src: url(./fonts/Console.ttf);
 }
@@ -41,13 +51,19 @@
   }
 }
 
-:root {
+body {
   background-color: #0c0c0c;
+  margin: 0;
   color: white;
   font-family: IBM;
 
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .cursor-blink {
   display: inline-block;

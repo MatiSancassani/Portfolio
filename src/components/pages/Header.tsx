@@ -1,6 +1,7 @@
 
 import { VscChromeMinimize, VscChromeClose, VscChromeMaximize } from "react-icons/vsc";
 import { useState, useEffect } from 'react';
+import { NavLink } from "react-router";
 const Header = () => {
     const simbol = ">";
     const [text, setText] = useState('');
@@ -25,13 +26,14 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-[.5rem] text-[#c1c1c2]">
                     <div className="w-[2rem] h-[2rem] flex items-center justify-center cursor-pointer hover:bg-[#e5e5e5]">
-                        <VscChromeMinimize />
+                        <NavLink to="/windows"><VscChromeMinimize /></NavLink>
                     </div>
                     <div className="w-[2rem] h-[2rem] flex items-center justify-center cursor-pointer hover:bg-[#e5e5e5]">
                         <VscChromeMaximize />
                     </div>
                     <div className="w-[2rem] h-[2rem] flex items-center justify-center cursor-pointer hover:bg-red-600 hover:text-white">
-                        <VscChromeClose />
+                        <NavLink to="/blue"><VscChromeClose /></NavLink>
+
                     </div>
                 </div>
             </div>

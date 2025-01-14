@@ -61,7 +61,7 @@ const Contacto = () => {
                         <div className="ml-[1rem] group flex items-center">
                             <a href="" target="_blank">
                                 <p className="flex gap-[.5rem] items-center text-[#fd79ff]"><span className="invisible group-hover:visible"><MdOutlineAlternateEmail /></span>
-                                    e-mail <div className="flex text-white">(<p className="text-[#00aa00]">matiassancassani@gmail.com</p>)</div>
+                                    e-mail <span className="flex text-white">(<span className="text-[#00aa00]">matiassancassani@gmail.com</span>)</span>
                                 </p>
                             </a>
                         </div>

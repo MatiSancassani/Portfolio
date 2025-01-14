@@ -1,20 +1,19 @@
-import SobreMi from "./components/SobreMi"
-import Header from "./components/Header"
-import Proyectos from "./components/Proyectos"
-import Contacto from "./components/Contacto"
-import Failed from "./components/Failed"
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import Home from "./components/Home"
+import BlueScreen from './components/pages/BlueScreen';
+import Windows from './components/pages/Windows';
 
 const App = () => {
 
 
   return (
-    <>
-      <Header />
-      <SobreMi />
-      <Failed />
-      <Proyectos />
-      <Contacto />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blue" element={<BlueScreen />} />
+        <Route path="/windows" element={<Windows />} />
+      </Routes>
+    </Router>
   )
 }
 
