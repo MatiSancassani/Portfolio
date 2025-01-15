@@ -3,16 +3,20 @@ import { useState, useEffect } from 'react';
 const Failed = () => {
     const simbol = ">";
     const [textFailed, setTextFailed] = useState('');
+    const [showCursor, setShowCursor] = useState(true);
     const fullTextFailed = 'Proye';
     useEffect(() => {
         const delay = setTimeout(() => {
             let index = 0;
             const interval = setInterval(() => {
-                setTextFailed(fullTextFailed.slice(0, index));
+                setTextFailed(fullTextFailed.slice(0, index + 1));
                 index++;
-                if (index > fullTextFailed.length) clearInterval(interval);
+                if (index === fullTextFailed.length) {
+                    clearInterval(interval);
+                    setTimeout(() => setShowCursor(false), 400);
+                }
             }, 100);
-        }, 4500);
+        }, 7000);
 
         return () => clearTimeout(delay);
     }, []);
@@ -22,7 +26,7 @@ const Failed = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDiv(true);
-        }, 1500);
+        }, 5600);
 
         return () => clearTimeout(timer);
     }, []);
@@ -32,19 +36,22 @@ const Failed = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDivError(true);
-        }, 5600);
+        }, 8000);
 
         return () => clearTimeout(timer);
     }, []);
 
 
     return (
-        <>
+        <div className='ml-[1rem]'>
             {showDiv && (
-                <div className="mt-[2rem]">
-                    <p className="relative">C:\Users\Matias Sancassani{simbol}{textFailed}
-                        <span className="cursor-blink2">█</span>
-                    </p>
+                <div className="mt-[1rem]">
+                    <div className="mt-[.5rem] relative">
+                        C:\Users\Matias Sancassani{simbol}{textFailed}
+                        {showCursor && ( // Condicional para mostrar el cursor solo si showCursor es true
+                            <div className="absolute bg-white cursor-blink top-[.8rem] w-[8px] h-[5px]"></div>
+                        )}
+                    </div>
                 </div>
             )}
             {showDivError && (
@@ -53,7 +60,7 @@ const Failed = () => {
                         operable program or batch file.</p>
                 </div>
             )}
-        </>
+        </div>
     )
 }
 

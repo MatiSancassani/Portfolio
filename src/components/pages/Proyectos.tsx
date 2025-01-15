@@ -3,17 +3,21 @@ import { useState, useEffect } from 'react';
 const Proyectos = () => {
     const simbol = ">"
     const [text, setText] = useState('');
+    const [showCursor, setShowCursor] = useState(true);
     const fullText = 'Proyectos';
     useEffect(() => {
         // Retrasa la animación 2 segundos
         const delay = setTimeout(() => {
             let index = 0;
             const interval = setInterval(() => {
-                setText(fullText.slice(0, index));
+                setText(fullText.slice(0, index + 1));
                 index++;
-                if (index > fullText.length) clearInterval(interval);
+                if (index === fullText.length) {
+                    clearInterval(interval);
+                    setTimeout(() => setShowCursor(false), 400);
+                }
             }, 100);
-        }, 7300);
+        }, 10500);
 
         return () => clearTimeout(delay);
     }, []);
@@ -23,7 +27,7 @@ const Proyectos = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDivComand(true);
-        }, 5600);
+        }, 8000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -35,20 +39,23 @@ const Proyectos = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDiv(true);
-        }, 8900);
+        }, 12000);
 
         return () => clearTimeout(timer);
     }, []);
 
     return (
-        <>
-            <div className="mt-[1rem]">
+        <div className='ml-[1rem]'>
+            <div className="">
                 {showDivComand && (
 
-                    <div className="mt-[1rem]">
-                        <p className="relative">C:\Users\Matias Sancassani{simbol}{text}
-                            <span className="cursor-blink2">█</span>
-                        </p>
+                    <div className="mt-[.5rem]">
+                        <div className="mt-[.5rem] relative">
+                            C:\Users\Matias Sancassani{simbol}{text}
+                            {showCursor && ( // Condicional para mostrar el cursor solo si showCursor es true
+                                <div className="absolute bg-white cursor-blink top-[.8rem] w-[8px] h-[5px]"></div>
+                            )}
+                        </div>
                     </div>
                 )}
 
@@ -85,7 +92,7 @@ const Proyectos = () => {
 
 
             </div>
-        </>
+        </div>
     )
 }
 

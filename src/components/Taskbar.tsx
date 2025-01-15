@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router-dom";
 
 const Taskbar = () => {
     return (
@@ -20,11 +20,11 @@ const Taskbar = () => {
                         <div className=" w-5 h-5 lg:w-6 lg:h-6">
                             <img src="/img/WindowsIcons/cmd.png" alt="" />
                         </div>
-                        <NavLink to="/">
+                        <Link to="/">
                             <div className="flex items-center">
                                 Cmd
                             </div>
-                        </NavLink>
+                        </Link>
                     </div>
                 </div>
 

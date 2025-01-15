@@ -37,6 +37,7 @@
   animation: parpadeo 1.5s infinite;
 }
 
+
 @keyframes parpadeo {
   0% {
     opacity: 0;
@@ -67,7 +68,7 @@ body {
 
 .cursor-blink {
   display: inline-block;
-  animation: blink 1s steps(2, start);
+  animation: blink 1s steps(2, start) infinite;
 }
 
 .cursor-blink2 {
@@ -76,17 +77,16 @@ body {
   animation-iteration-count: 3;
 }
 
+.cursor-blink3 {
+  display: inline-block;
+  animation: blink 1s steps(2, start);
+  animation-iteration-count: 2;
+}
+
 
 
 @keyframes blink {
-
-  0%,
-  50% {
-    opacity: 1;
-  }
-
-  50.01%,
-  100% {
-    opacity: 0;
+  to {
+    visibility: hidden;
   }
 }
