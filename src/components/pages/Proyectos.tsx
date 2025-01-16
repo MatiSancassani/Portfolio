@@ -66,7 +66,7 @@ const Proyectos = () => {
                             <h1 className="text-[2rem] text-[#c1c1c2]">Proyectos</h1>
                         </div>
                         <div className="ml-[1rem] group">
-                            <a href="https://big-burger-theta.vercel.app/" target="_blank">
+                            <a href="https://big-burger-omega.vercel.app/" target="_blank">
                                 <p>(<span className="invisible group-hover:visible">*</span>)
                                     BIGBURGER \ Ecommerce para hamburgueseria creado con stack MERN
                                     (<span className="text-[#fffe60]">En desarrollo</span>)
