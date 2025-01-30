@@ -60,32 +60,57 @@ const Proyectos = () => {
                 )}
 
                 {showDiv && (
-                    <div>
+                    <div className='flex flex-col'>
                         <div className="mt-[.5rem] flex items-center gap-[5px]">
                             <div>{simbol}</div>
                             <h1 className="text-[2rem] text-[#c1c1c2]">Proyectos</h1>
                         </div>
-                        <div className="ml-[1rem] group">
-                            <a href="https://big-burger-omega.vercel.app/" target="_blank">
-                                <p>(<span className="invisible group-hover:visible">*</span>)
-                                    BIGBURGER \ Ecommerce para hamburgueseria creado con stack MERN
-                                    (<span className="text-[#fffe60]">En desarrollo</span>)
-                                </p>
-                            </a>
+                        <div className="ml-[1rem] group mb-[1rem]">
+                            <div>
+                                <a href="https://big-burger-omega.vercel.app/" target="_blank">
+                                    <p>(<span className="invisible group-hover:visible">*</span>)
+                                        BIGBURGER \ Ecommerce para hamburgueseria
+                                        (<span className="text-[#fffe60]">En desarrollo</span>)
+                                    </p>
+                                </a>
+                            </div>
+                            <div className='flex gap-4'>
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/node.png" alt="NodeJS" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/express.png" alt="ExpressJS" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/mongo.png" alt="MongoDB" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/chakra.png" alt="Chakra" />
+                            </div>
                         </div>
-                        <div className="ml-[1rem] group">
-                            <a href="https://matisancassani.github.io/paradavip/" target="_blank">
-                                <p>(<span className="invisible group-hover:visible">*</span>)
-                                    PARADA VIP \ Proyecto de practica sobre emprendimiento personal (HTML, CSS, JS)
-                                </p>
-                            </a>
+                        <div className="ml-[1rem] group mb-[1rem]">
+                            <div>
+                                <a href="https://matisancassani.github.io/paradavip/" target="_blank">
+                                    <p>(<span className="invisible group-hover:visible">*</span>)
+                                        PARADA VIP \ Proyecto sobre emprendimiento personal
+                                    </p>
+                                </a>
+                            </div>
+                            <div className='flex gap-4'>
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/bootstrap.png" alt="bootstrap" />
+                            </div>
                         </div>
-                        <div className="ml-[1rem] group">
-                            <a href="https://matisancassani.github.io/vikinga/" target="_blank">
-                                <p>(<span className="invisible group-hover:visible">*</span>)
-                                    VIKINGA STORE \ Ecommerce para tienda de ropa
-                                </p>
-                            </a>
+                        <div className="ml-[1rem] group mb-[1rem]">
+                            <div className=''>
+                                <a href="https://matisancassani.github.io/vikinga/" target="_blank">
+                                    <p>(<span className="invisible group-hover:visible">*</span>)
+                                        VIKINGA STORE \ Ecommerce para una tienda de ropa
+                                    </p>
+                                </a>
+                            </div>
+                            <div className='flex gap-4'>
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
+                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
+                            </div>
                         </div>
                     </div>
                 )}
