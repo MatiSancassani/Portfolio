@@ -5,11 +5,11 @@ const Windows = () => {
     return (
         <div className="h-screen overflow-hidden">
             <div className="hidden lg:block">
-                <img src="/img/xp.jpg" alt="" />
+                <img src="/img/xp.webp" alt="" />
             </div>
 
             <div className="lg:hidden">
-                <img src="/img/iphone.jpg" alt="" />
+                <img src="/img/iphone.webp" alt="" />
             </div>
             <Taskbar />
         </div>

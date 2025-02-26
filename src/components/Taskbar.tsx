@@ -20,7 +20,7 @@ const Taskbar = () => {
                         <div className=" w-5 h-5 lg:w-6 lg:h-6">
                             <img src="/img/WindowsIcons/cmd.png" alt="" />
                         </div>
-                        <Link to="/">
+                        <Link to="/windowsmin">
                             <div className="flex items-center">
                                 Cmd
                             </div>

@@ -8,6 +8,7 @@ import Technologies from "./pages/Technologies"
 const Home = () => {
     return (
         <div id="home" className="">
+            {/* <NewBar /> */}
             <Header />
             <SobreMi />
             <Technologies />
