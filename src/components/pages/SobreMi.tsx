@@ -14,7 +14,7 @@ const SobreMi = () => {
 
 
     return (
-        <div className='ml-[1rem]'>
+        <div className='ml-[.5rem]'>
             {showDiv && (
                 <div>
                     <div className="mt-[.5rem] flex items-center gap-[5px]">

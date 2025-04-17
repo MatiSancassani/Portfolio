@@ -45,7 +45,7 @@ const Proyectos = () => {
     }, []);
 
     return (
-        <div className='ml-[1rem]'>
+        <div className='ml-[.5rem]'>
             <div className="">
                 {showDivComand && (
 
@@ -67,7 +67,7 @@ const Proyectos = () => {
                         </div>
                         <div className="ml-[1rem] group mb-[1rem]">
                             <div>
-                                <a href="https://big-burger-omega.vercel.app/" target="_blank">
+                                <a href="https://big-burger-front.vercel.app" target="_blank">
                                     <p>(<span className="invisible group-hover:visible">*</span>)
                                         BIGBURGER \ Ecommerce para hamburgueseria
                                         (<span className="text-[#fffe60]">En desarrollo</span>)

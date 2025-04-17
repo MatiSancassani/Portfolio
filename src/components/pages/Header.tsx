@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='ml-[1rem]'>
+            <div className='ml-[.5rem]'>
                 <p>Portfolio [Version 2025]</p>
                 <p>(c) SNK Corporation. All rights reserved.</p>
                 <div className="mt-[.5rem] relative">

@@ -45,7 +45,7 @@ const Contacto = () => {
 
 
     return (
-        <div className='ml-[1rem]'>
+        <div className='ml-[.5rem] mb-[2rem]'>
             <div className="mt-[.5rem]">
                 {showDiv && (
                     <div>
@@ -59,31 +59,33 @@ const Contacto = () => {
                 )}
 
                 {showDivContact && (
-                    <div>
+                    <div className="text-[1.2rem]">
                         <div className="flex items-center gap-[5px]">
                             <div>{simbol}</div>
                             <h1 className="text-[2rem] text-[#c1c1c2]">Contacto \ Redes</h1>
                         </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#fd79ff]"><span className=""><MdOutlineAlternateEmail /></span>
-                                    e-mail <span className="flex text-white">(<span className="text-[#ffc004]">matiassancassani@gmail.com</span>)</span>
-                                </p>
-                            </a>
-                        </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="https://www.linkedin.com/in/matisancassani/" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#2472C8]"><span className=""><FaLinkedinIn /></span>
-                                    Linkedin
-                                </p>
-                            </a>
-                        </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="https://github.com/MatiSancassani" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#b2b2ff]"><span className=""><FaGithub /></span>
-                                    Github
-                                </p>
-                            </a>
+                        <div className="flex items-center">
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="mailto:matiassancassani@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#fd79ff]"><span className=""><MdOutlineAlternateEmail /></span>
+                                        e-mail
+                                    </p>
+                                </a>
+                            </div>
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="https://www.linkedin.com/in/matisancassani/" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#2472C8]"><span className=""><FaLinkedinIn /></span>
+                                        Linkedin
+                                    </p>
+                                </a>
+                            </div>
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="https://github.com/MatiSancassani" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#b2b2ff]"><span className=""><FaGithub /></span>
+                                        Github
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 )}

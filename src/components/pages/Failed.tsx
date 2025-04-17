@@ -43,7 +43,7 @@ const Failed = () => {
 
 
     return (
-        <div className='ml-[1rem]'>
+        <div className='ml-[.5rem]'>
             {showDiv && (
                 <div className="mt-[1rem]">
                     <div className="mt-[.5rem] relative">

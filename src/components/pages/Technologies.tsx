@@ -46,7 +46,7 @@ const Technologies = () => {
     }, []);
 
     return (
-        <div className='ml-[1rem]'>
+        <div className='ml-[.5rem]'>
             {showDivComand && (
 
                 <div className="mt-[1rem]">
