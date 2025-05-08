@@ -13,7 +13,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/blue" element={<BlueScreen />} />
         <Route path="/windows" element={<Windows />} />
-        <Route path="/windowsmin" element={<WindowsMinimize />} />
+        <Route path="/wmin" element={<WindowsMinimize />} />
       </Routes>
     </Router>
   )

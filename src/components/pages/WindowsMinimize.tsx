@@ -3,6 +3,10 @@ import { VscChromeMinimize, VscChromeClose, VscChromeMaximize } from "react-icon
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
+import Frontend from './technologies/frontend/Frontend';
+import Backend from './technologies/backend/Backend';
+import Herramientas from './technologies/herramientas/Herramientas';
+import Aprendiendo from './technologies/aprendiendo/Aprendiendo';
 function WindowsMinimize() {
     const simbol = ">";
     return (
@@ -81,118 +85,19 @@ function WindowsMinimize() {
                     </div>
 
                     <div className='flex flex-col gap-4'>
-                        <div className="flex flex-col gap-2 ml-[.5rem]">
-                            <div className='flex items-center gap-2'>
-
-                                <h2 className="text-[1.5rem] text-[#ffc004]">Frontend</h2>
-                            </div>
-                            <div className='flex gap-4 flex-wrap'>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/html.png" alt="HTML" />
-                                    <small className="text-[1rem] leading-5">HTML</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/css.png" alt="CSS" />
-                                    <small className="text-[1rem] leading-5">CSS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/javascript.png" alt="JavaScript" />
-                                    <small className="text-[1rem] leading-5">JavaScript</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
-                                    <small className="text-[1rem] leading-5">ReactJS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/chakra.png" alt="Chakra" />
-                                    <small className="text-[1rem] leading-5">ChakraUI</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
-                                    <small className="text-[1rem] leading-5">TailwindCSS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/sass.png" alt="SASS" />
-                                    <small className="text-[1rem] leading-5">SASS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/bootstrap.png" alt="Boostrap" />
-                                    <small className="text-[1rem] leading-5">Bootstrap</small>
-                                </div>
-                            </div>
+                        <div>
+                            <Frontend />
                         </div>
-                        <div className="flex flex-col gap-2 ml-[.5rem]">
-                            <div className='flex items-center gap-2'>
-
-                                <h2 className="text-[1.5rem] text-[#257c77]">Backend</h2>
-                            </div>
-                            <div className='flex gap-4 flex-wrap'>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/node.png" alt="NodeJS" />
-                                    <small className="text-[1rem] leading-5">NodeJS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/express.png" alt="ExpressJS" />
-                                    <small className="text-[1rem] leading-5">ExpressJS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/mongo.png" alt="MongoDB" />
-                                    <small className="text-[1rem] leading-5">MongoDB</small>
-                                </div>
-                            </div>
+                        <div>
+                            <Backend />
                         </div>
-                        <div className="flex flex-col gap-2 ml-[.5rem]">
-                            <div className='flex items-center gap-2'>
-
-                                <h2 className="text-[1.5rem] text-[#fd79ff]">Aprendiendo</h2>
-                            </div>
-                            <div className='flex gap-4 flex-wrap'>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/next.png" alt="NextJS" />
-                                    <small className="text-[1rem] leading-5">NextJS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/typescript.png" alt="TypeScript" />
-                                    <small className="text-[1rem] leading-5">TypeScript</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/nest.png" alt="NestJS" />
-                                    <small className="text-[1rem] leading-5">NestJS</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/postgress.png" alt="PostgreSQL" />
-                                    <small className="text-[1rem] leading-5">PostgreSQL</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/docker.png" alt="Docker" />
-                                    <small className="text-[1rem] leading-5">Docker</small>
-                                </div>
-                            </div>
+                        <div>
+                            <Aprendiendo />
                         </div>
-                        <div className="flex flex-col gap-2 ml-[.5rem]">
-                            <div className='flex items-center gap-2'>
-
-                                <h2 className="text-[1.5rem] text-[#01f1a3]">Herramientas</h2>
-                            </div>
-                            <div className='flex gap-6 flex-wrap'>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/git.png" alt="Git" />
-                                    <small className="text-[1rem] leading-5">Git</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/github.png" alt="GitHub" />
-                                    <small className="text-[1rem] leading-5">GitHub</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/vscode.png" alt="VSCode" />
-                                    <small className="text-[1rem] leading-5">VSCode</small>
-                                </div>
-                                <div className='flex items-center flex-col gap-2'>
-                                    <img className="w-[3rem] h-[3rem]" src="/img/pixelArt/npm.png" alt="Npm" />
-                                    <small className="text-[1rem] leading-5">npm</small>
-                                </div>
-                            </div>
+                        <div>
+                            <Herramientas />
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -224,53 +129,122 @@ function WindowsMinimize() {
                             <div>{simbol}</div>
                             <h1 className="text-[2rem] text-[#c1c1c2]">Proyectos</h1>
                         </div>
-                        <div className="ml-[1rem] group mb-[1rem]">
+                        <div>
+                            <p className='text-[#ffc004]'>Frontend</p>
                             <div>
-                                <a href="https://big-burger-omega.vercel.app/" target="_blank">
-                                    <p>(<span className="invisible group-hover:visible">*</span>)
-                                        BIGBURGER \ Ecommerce para hamburgueseria
-                                        (<span className="text-[#fffe60]">En desarrollo</span>)
-                                    </p>
-                                </a>
-                            </div>
-                            <div className='flex gap-4'>
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/node.png" alt="NodeJS" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/express.png" alt="ExpressJS" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/mongo.png" alt="MongoDB" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/chakra.png" alt="Chakra" />
+                                <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://big-burger-front.vercel.app" target="_blank">
+                                            <p className='flex'>(<span className="invisible group-hover:visible">*</span>)
+                                                BIGBURGER
+                                            </p>
+                                        </a>
+                                        <div className='flex gap-2'>
+                                            <p>[</p>
+                                            <a href="https://github.com/MatiSancassani/BigBurgerFront" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Ecommerce para hamburgueseria</p>
+
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/chakra.png" alt="Chakra" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://matisancassani.github.io/paradavip/" target="_blank">
+                                            <p>(<span className="invisible group-hover:visible">*</span>)
+                                                PARADA VIP
+                                            </p>
+                                        </a>
+                                        <div className='flex gap-2'>
+                                            <p>[</p>
+                                            <a href="https://github.com/MatiSancassani/paradavip" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Proyecto sobre emprendimiento personal</p>
+
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/bootstrap.png" alt="bootstrap" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://matisancassani.github.io/vikinga/" target="_blank">
+                                            <p>(<span className="invisible group-hover:visible">*</span>)
+                                                VIKINGA STORE
+                                            </p>
+                                        </a>
+
+                                        <div className='flex gap-3'>
+                                            <p>[</p>
+                                            <a href="https://github.com/MatiSancassani/vikinga" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Ecommerce para una tienda de ropa</p>
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="ml-[1rem] group mb-[1rem]">
+                        <div>
+                            <p className='text-[#257c77]'>Backend</p>
                             <div>
-                                <a href="https://matisancassani.github.io/paradavip/" target="_blank">
-                                    <p>(<span className="invisible group-hover:visible">*</span>)
-                                        PARADA VIP \ Proyecto sobre emprendimiento personal
-                                    </p>
-                                </a>
-                            </div>
-                            <div className='flex gap-4'>
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/bootstrap.png" alt="bootstrap" />
+                                <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://big-burger-front.vercel.app" target="_blank">
+                                            <p className='flex'>(<span className="invisible group-hover:visible">*</span>)
+                                                BIGBURGER
+                                            </p>
+                                        </a>
+                                        <div className='flex gap-2'>
+                                            <p>[</p>
+                                            <a href="https://github.com/MatiSancassani/BigBurgerBackend" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <a href="" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/swagger.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Backend web de hamburgueseria</p>
+
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/mongo.png" alt="MongoDB" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/express.png" alt="ExpressJS" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/node.png" alt="NodeJS" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="ml-[1rem] group mb-[1rem]">
-                            <div className=''>
-                                <a href="https://matisancassani.github.io/vikinga/" target="_blank">
-                                    <p>(<span className="invisible group-hover:visible">*</span>)
-                                        VIKINGA STORE \ Ecommerce para una tienda de ropa
-                                    </p>
-                                </a>
-                            </div>
-                            <div className='flex gap-4'>
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/html.png" alt="Html" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/css.png" alt="Css" />
-                                <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/javascript.png" alt="Javascript" />
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -292,26 +266,29 @@ function WindowsMinimize() {
                             <div>{simbol}</div>
                             <h1 className="text-[2rem] text-[#c1c1c2]">Contacto \ Redes</h1>
                         </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#fd79ff]"><span className=""><MdOutlineAlternateEmail /></span>
-                                    e-mail <span className="flex text-white">(<span className="text-[#ffc004]">matiassancassani@gmail.com</span>)</span>
-                                </p>
-                            </a>
-                        </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="https://www.linkedin.com/in/matisancassani/" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#2472C8]"><span className=""><FaLinkedinIn /></span>
-                                    Linkedin
-                                </p>
-                            </a>
-                        </div>
-                        <div className="ml-[1rem] flex items-center">
-                            <a href="https://github.com/MatiSancassani" target="_blank">
-                                <p className="flex gap-[.5rem] items-center text-[#b2b2ff]"><span className=""><FaGithub /></span>
-                                    Github
-                                </p>
-                            </a>
+
+                        <div className="flex items-center mb-[3rem]">
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="mailto:matiassancassani@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#fd79ff]"><span className=""><MdOutlineAlternateEmail /></span>
+                                        e-mail
+                                    </p>
+                                </a>
+                            </div>
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="https://www.linkedin.com/in/matisancassani/" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#2472C8]"><span className=""><FaLinkedinIn /></span>
+                                        Linkedin
+                                    </p>
+                                </a>
+                            </div>
+                            <div className="ml-[1rem] flex items-center">
+                                <a href="https://github.com/MatiSancassani" target="_blank">
+                                    <p className="flex gap-[.5rem] items-center text-[#b2b2ff]"><span className=""><FaGithub /></span>
+                                        Github
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@ import Header from "./pages/Header"
 import Proyectos from "./pages/Proyectos"
 import Contacto from "./pages/Contacto"
 import Failed from "./pages/Failed"
-import Technologies from "./pages/Technologies"
+import Technologies from "./pages/technologies/Technologies"
 
 const Home = () => {
     return (
