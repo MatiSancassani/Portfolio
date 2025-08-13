@@ -53,12 +53,12 @@ function WindowsMinimize() {
                         <h2 className="text-[#c7c7c7] text-[3rem] leading-7">Developer</h2>
                     </div>
 
-                    <div className="mt-[1rem] lg:mt-[.5rem]">
-                        <p className='text-[15px]'>Mi nombre es Matias Sancassani, tengo 26 años y vivo en Argentina.<br />
+                    <div className="mt-[1rem] lg:mt-[.5rem] lg:w-[30%]">
+                        <p className='text-[15px]'>Mi nombre es Matias Sancassani, tengo 27 años y vivo en Argentina.<br />
                             Soy un apasionado por la programacion y el aprendizaje <br />
-                            Me entusiasma la idea de aplicar y expandir mis habilidades en un entorno dinámico <br />
-                            Actualmente estoy en la busqueda activa de mi primera experiencia profesional <br />
-                            donde pueda contribuir a proyectos innovadores y aprender de un equipo experimentado
+                            Me entusiasma la idea de aplicar y expandir mis habilidades en un entorno dinámico. <br />
+Actualmente formo parte de un equipo de desarrollo, contribuyendo a proyectos innovadores y
+fortaleciendo mis conocimientos junto a profesionales experimentados.
                         </p>
                         <div className="w-[6rem] mt-[.5rem] cursor-pointer infinity2">
                             <a href="/docs/MatiasSancassani.pdf" download="MatiasSancassani.pdf">
@@ -117,6 +117,31 @@ function WindowsMinimize() {
                         <div>
                             <p className='text-[#ffc004]'>Frontend</p>
                             <div>
+                                  <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://municipiosanjuan.gob.ar" target="_blank">
+                                            <p className='flex'>(<span className="invisible group-hover:visible">*</span>)
+                                                MUNICIPALIDAD DE SAN JUAN
+                                            </p>
+                                        </a>
+                                        <div className='flex gap-2'>
+                                            <p>[</p>
+                                            <a href="https://github.com/Municipalidad-de-Capital" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Sitio web de la Municipalidad de San Juan</p>
+
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
+                                        </div>
+                                    </div>
+
+                                </div>
                                 <div className="ml-[1rem] group mb-[1rem]">
                                     <div className='flex items-center gap-2'>
                                         <a href="https://big-burger-front.vercel.app" target="_blank">
