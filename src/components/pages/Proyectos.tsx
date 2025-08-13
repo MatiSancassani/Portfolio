@@ -4,7 +4,7 @@ const Proyectos = () => {
     const simbol = ">"
     const [text, setText] = useState('');
     const [showCursor, setShowCursor] = useState(true);
-    const fullText = 'Proyectos';
+    const fullText = 'Experiencia';
     useEffect(() => {
         // Retrasa la animación 2 segundos
         const delay = setTimeout(() => {
@@ -17,7 +17,7 @@ const Proyectos = () => {
                     setTimeout(() => setShowCursor(false), 400);
                 }
             }, 100);
-        }, 10500);
+        }, 8000);
 
         return () => clearTimeout(delay);
     }, []);
@@ -27,7 +27,7 @@ const Proyectos = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDivComand(true);
-        }, 8000);
+        }, 5500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -39,7 +39,7 @@ const Proyectos = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDiv(true);
-        }, 12000);
+        }, 9500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -63,11 +63,38 @@ const Proyectos = () => {
                     <div className='flex flex-col'>
                         <div className="mt-[.5rem] flex items-center gap-[5px]">
                             <div>{simbol}</div>
-                            <h1 className="text-[2rem] text-[#c1c1c2]">Proyectos</h1>
+                            <h1 className="text-[2rem] text-[#c1c1c2]">Experiencia</h1>
                         </div>
                         <div>
                             <p className='text-[#ffc004]'>Frontend</p>
                             <div>
+
+                                <div className="ml-[1rem] group mb-[1rem]">
+                                    <div className='flex items-center gap-2'>
+                                        <a href="https://municipiosanjuan.gob.ar" target="_blank">
+                                            <p className='flex'>(<span className="invisible group-hover:visible">*</span>)
+                                                MUNICIPALIDAD DE SAN JUAN
+                                            </p>
+                                        </a>
+                                        <div className='flex gap-2'>
+                                            <p>[</p>
+                                            <a href="https://github.com/Municipalidad-de-Capital" target="_blank">
+                                                <img className='w-[1.5rem] h-[1.5rem]' src="/img/pixelArt/github.png" alt="" />
+                                            </a>
+                                            <p>]</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Sitio web de la Municipalidad de San Juan</p>
+
+                                        <div className='flex gap-4'>
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/react.png" alt="ReactJS" />
+                                            <img className="w-[1.5rem] h-[1.5rem]" src="/img/pixelArt/tailwind.png" alt="Tailwind" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
                                 <div className="ml-[1rem] group mb-[1rem]">
                                     <div className='flex items-center gap-2'>
                                         <a href="https://big-burger-front.vercel.app" target="_blank">

@@ -101,21 +101,6 @@ function WindowsMinimize() {
                     </div>
                 </div>
             </div>
-            {/* FAILED */}
-            <div className='ml-[1rem]'>
-
-                <div className="mt-[1rem]">
-                    <div className="mt-[.5rem] relative">
-                        C:\Users\Matias Sancassani{simbol}Proye
-                    </div>
-                </div>
-
-                <div>
-                    <p>'Proye' is not recognized as an internal or external command,<br />
-                        operable program or batch file.</p>
-                </div>
-
-            </div>
             {/* PROYECTOS */}
             <div className='ml-[1rem]'>
                 <div className="">

@@ -17,7 +17,7 @@ const Contacto = () => {
                     setTimeout(() => setShowCursor(false), 400);
                 }
             }, 100);
-        }, 14500);
+        }, 12500);
 
         return () => clearTimeout(delay);
     }, []);
@@ -28,7 +28,7 @@ const Contacto = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDiv(true);
-        }, 12000);
+        }, 9500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -38,7 +38,7 @@ const Contacto = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDivContact(true);
-        }, 15600);
+        }, 14000);
 
         return () => clearTimeout(timer);
     }, []);
